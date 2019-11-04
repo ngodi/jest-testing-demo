@@ -14,6 +14,15 @@ Serves as a unit testing practice to common javascript operations with JEST test
 
 [Assignment link](https://www.theodinproject.com/courses/javascript/lessons/testing-practice)
 
+User guide
+----------
+
+*   1.clone repo
+*   2.Navigate to root directory
+*   3.Install node and run npm install to install required packages
+*   4.Add node\_modules to gitignore
+*   5.run webpack, to view output in console
+
 Author
 ------
 
