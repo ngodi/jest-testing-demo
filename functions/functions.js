@@ -17,7 +17,16 @@ const caesarCipher = {
       });
              return cipherText.join().replace(/,/g,'');
         },
-
+   decipher: (encryptedText, key) => {
+    let abc = 'abcdefghijklmnopqrstuvwxyz'.split('');
+    let decryptedText = [];
+    encryptedText.toLowerCase().split('').forEach(a => {
+    let initIndex = abc.indexOf(a);
+    let finIndex = (initIndex - key) % 26;
+    decryptedText.push(abc[finIndex]);
+      });
+             return decryptedText.join().replace(/,/g,'');
+        },
            
    };
 

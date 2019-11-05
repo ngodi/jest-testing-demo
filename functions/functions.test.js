@@ -26,3 +26,7 @@ test('4*2 to equal 2', () => {
 test('encrypts welcome to ygneqog', () => {
     expect(caesarCipher.cipher('welcome', 2)).toBe('ygneqog');
 })
+
+test('decrypts to ygneqog to welcome', () => {
+    expect(caesarCipher.decipher('ygneqog', 2)).toBe('welcome');
+})
