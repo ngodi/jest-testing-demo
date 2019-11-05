@@ -1,4 +1,4 @@
-import {reverseString, capitalize, caesarCipher, calculator} from './functions';
+import {reverseString, capitalize, caesarCipher, calculator, analyze} from './functions';
 
 test('should Capitalize the string', () => {
     expect(capitalize('word')).toBe('Word');
@@ -33,4 +33,8 @@ test('decrypts gOqe to eMoc', () => {
 
 test('encrypts @Em o!c to @Go q!e', () => {
     expect(caesarCipher.cipher('@Em o!c', 2)).toBe('@Go q!e');
+})
+
+test('analysis of [1,2,3,4,5] {average: 3, min: 1, max:5, length: 5} ', () => {
+    expect(analyze([1,2,3,4,5])).toStrictEqual({average: 3, min: 1, max:5, length: 5});
 })

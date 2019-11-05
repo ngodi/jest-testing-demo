@@ -46,8 +46,18 @@ const caesarCipher = {
       }
       });
        return decryptedText.join().replace(/,/g,'');       
-    }
-           
+    },           
    };
 
-export {reverseString, capitalize, calculator, caesarCipher }
+   const analyze = (array) => {
+    const reducer = (accumulator, currentValue) => accumulator + currentValue;
+    const sum = array.reduce(reducer)
+      return {
+          average: Math.floor(sum/array.length),
+          min: Math.min(...array),
+          max: Math.max(...array),
+          length: array.length
+      };
+  }
+
+export {reverseString, capitalize, calculator, caesarCipher, analyze  }
