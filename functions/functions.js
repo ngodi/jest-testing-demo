@@ -6,5 +6,19 @@ const calculator =  {
     divide: (a, b) => a / b,
     multiply: (a, b) => a * b
   };
+const caesarCipher = {
+   cipher: (str, key) => {
+    let abc = 'abcdefghijklmnopqrstuvwxyz'.split('');
+    let cipherText = [];
+    str.toLowerCase().split('').forEach(a => {
+    let initIndex = abc.indexOf(a);
+    let finIndex = (initIndex + key) % 26;
+    cipherText.push( abc[finIndex]);
+      });
+             return cipherText.join().replace(/,/g,'');
+        },
 
-export {reverseString, capitalize, calculator}
+           
+   };
+
+export {reverseString, capitalize, calculator, caesarCipher }

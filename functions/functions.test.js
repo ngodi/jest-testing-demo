@@ -1,4 +1,4 @@
-import {reverseString, capitalize, sum, calculator} from './functions';
+import {reverseString, capitalize, caesarCipher, calculator} from './functions';
 
 test('should Capitalize the string', () => {
     expect(capitalize('word')).toBe('Word');
@@ -21,4 +21,8 @@ test('4/2 to equal 2', () => {
 })
 test('4*2 to equal 2', () => {
     expect(calculator.multiply(4, 2)).toBe(8);
+})
+
+test('encrypts welcome to ygneqog', () => {
+    expect(caesarCipher.cipher('welcome', 2)).toBe('ygneqog');
 })
