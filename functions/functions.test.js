@@ -23,10 +23,14 @@ test('4*2 to equal 2', () => {
     expect(calculator.multiply(4, 2)).toBe(8);
 })
 
-test('encrypts welcome to ygneqog', () => {
-    expect(caesarCipher.cipher('welcome', 2)).toBe('ygneqog');
+test('encrypts Emoc to Goqe', () => {
+    expect(caesarCipher.cipher('Emoc', 2)).toBe('Goqe');
 })
 
-test('decrypts to ygneqog to welcome', () => {
-    expect(caesarCipher.decipher('ygneqog', 2)).toBe('welcome');
+test('decrypts gOqe to eMoc', () => {
+    expect(caesarCipher.decipher('gOqe', 2)).toBe('eMoc');
+})
+
+test('encrypts @Em o!c to @Go q!e', () => {
+    expect(caesarCipher.cipher('@Em o!c', 2)).toBe('@Go q!e');
 })
