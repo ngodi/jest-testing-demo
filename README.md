@@ -21,7 +21,7 @@ User guide
 *   2.Navigate to root directory
 *   3.Install node and run npm install to install required packages
 *   4.Add node\_modules to gitignore
-*   5.run webpack, to view output in console
+*   5.npm run test, to view test results
 
 Author
 ------
